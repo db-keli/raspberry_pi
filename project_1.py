@@ -20,16 +20,48 @@ while True:
     time.sleep(1)
     GPIO.output(PIN18, 0)
     time.sleep(1)
+    
     GPIO.output(PIN16, 1)
     time.sleep(1)
     GPIO.output(PIN16, 0)
     time.sleep(1)
+    
     GPIO.output(PIN18, 1)
     GPIO.output(PIN16, 1)
-    time.sleep(3)
+    time.sleep(1)
     GPIO.output(PIN18, 0)
     GPIO.output(PIN16, 0)
     time.sleep(1)
+    
+    GPIO.output(PIN15, 1)
+    time.sleep(1)
+    GPIO.output(PIN15, 0)
+    time.sleep(1)
+    
+    GPIO.output(PIN18, 1)
+    GPIO.output(PIN15, 1)
+    time.sleep(1)
+    GPIO.output(PIN18, 0)
+    GPIO.output(PIN15, 0)
+    time.sleep(1)
+    
+    GPIO.output(PIN16, 1)
+    GPIO.output(PIN15, 1)
+    time.sleep(1)
+    GPIO.output(PIN16, 0)
+    GPIO.output(PIN15, 0)
+    time.sleep(1)
+    
+    GPIO.output(PIN18, 1)
+    GPIO.output(PIN16, 1)
+    GPIO.output(PIN15, 1)
+    time.sleep(1)
+    GPIO.output(PIN18, 0)
+    GPIO.output(PIN16, 0)
+    GPIO.output(PIN15, 0)
+    time.sleep(1)
+
     break
+
 
 GPIO.cleanup()
