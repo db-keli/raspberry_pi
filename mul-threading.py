@@ -22,10 +22,12 @@ def second():
 t1 = threading.Thread(target=first)
 t2 = threading.Thread(target=second)
 
-t1.start()
-t2.start()
+threads = [t1, t2]
 
-t1.join()
-t2.join()
+for i in threads:
+    i.start()
+for i in threads:
+    i.join()   
+    
 
 GPIO.cleanup()
