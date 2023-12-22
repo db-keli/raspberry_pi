@@ -28,6 +28,5 @@ for i in threads:
     i.start()
 for i in threads:
     i.join()   
-    
 
 GPIO.cleanup()

@@ -241,7 +241,7 @@ while True:
     time.sleep(1)
     GPIO.output(PIN11, 0)
     GPIO.output(PIN13, 0)
-    GPIO.output(PIN16, 0)
+    GPIO.output(PIN15, 0)
     GPIO.output(PIN18, 0)
     time.sleep(1)
     

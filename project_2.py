@@ -15,7 +15,7 @@ try:
         else:
             print("LED is off")
              
-        
+        sleep(1)
     
     
 except KeyboardInterrupt:
