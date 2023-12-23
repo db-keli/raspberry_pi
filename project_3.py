@@ -19,7 +19,8 @@ try:
         if buttonState == 1 and oldButtonState == 0:
             LEDstate = not LEDstate
             gpio.output(OUTPIN, LEDstate)
-        oldButtonState = buttonState 
+            sleep(DELAY)
+        oldButtonState = buttonState
 except KeyboardInterrupt:
     gpio.cleanup()
 
